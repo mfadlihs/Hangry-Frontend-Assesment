@@ -1,6 +1,10 @@
 import Loading from "@/components/Loading";
+import { NextPage } from "next";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 
-export default function Home() {
-  return <div className="h-full"></div>;
-}
+const HomePage: NextPage = dynamic(() => import("@/partials/home"), {
+  loading: () => <Loading />,
+});
+
+export default HomePage;

@@ -3,7 +3,7 @@ import Header from "../Header";
 
 export default function Scaffold({ children }: ScaffoldProps) {
   return (
-    <div className="h-screen">
+    <div className="relative">
       <Header />
       {children}
     </div>

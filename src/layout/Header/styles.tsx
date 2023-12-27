@@ -10,4 +10,5 @@ export const HeaderContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff90;
+  z-index: 10;
 `;
