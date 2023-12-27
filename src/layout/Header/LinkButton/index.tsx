@@ -8,7 +8,7 @@ export interface LinkButtonProps {
 
 export default function LinkButton({ children, className }: LinkButtonProps) {
   return (
-    <LinkButtonContainer className={className} active>
+    <LinkButtonContainer className={`${className} lg `} active>
       {children}
     </LinkButtonContainer>
   );

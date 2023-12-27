@@ -2,7 +2,6 @@ import styled from "@emotion/styled";
 
 export const HeaderContainer = styled.div`
   backdrop-filter: blur(60px);
-
   position: fixed;
   top: 0px;
   left: 0px;

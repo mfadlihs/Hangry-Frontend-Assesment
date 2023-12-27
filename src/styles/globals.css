@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  * {
+    @apply ease-in-out duration-500 transition-all;
+  }
+}
+
 html {
   font-family: "Inter", sans-serif;
   scroll-behavior: smooth;

@@ -1,4 +1,6 @@
 import styled from "@emotion/styled";
+import { css } from "@emotion/react";
+import { mediaQuery } from "@/util/styles";
 
 export const LinkButtonContainer = styled.div<{
   active: boolean;
@@ -12,7 +14,11 @@ export const LinkButtonContainer = styled.div<{
     position: absolute;
     border-radius: 5px;
     opacity: 0;
-    height: 4px;
+    ${css(
+      mediaQuery({
+        height: ["2px", "2.5px", "3px", "4px"],
+      })
+    )}
     background-color: var(--primary);
     bottom: -8px;
     left: 8px;
