@@ -1,8 +1,6 @@
+import Loading from "@/components/Loading";
 import Image from "next/image";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  return <div>asdasd</div>;
+  return <div className="h-full"></div>;
 }
