@@ -24,17 +24,10 @@ export default function App({ Component, pageProps }: AppProps) {
           name="viewport"
           content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
         />
-        <meta
-          name="title"
-          content="Hangry - Multi-brand delivery-only restaurants serving delicious food"
-        />
+        <meta name="title" content="Hangry - Assesment" />
         <meta
           name="description"
-          content="Satisfy your cravings here! Find out our latest promotion and events here!"
-        />
-        <meta
-          name="description"
-          content="Fadli Hasan is a software engineer who builds accessible, inclusive product and digital experiences for web & mobile."
+          content="This website builds for Hangry Frontend Intern Submission"
           key="description"
         />
         <meta

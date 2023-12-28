@@ -6,15 +6,39 @@ import Link from "next/link";
 import OverlayDownload from "./OverlayDownload";
 import HeaderMobile from "./HeaderMobile";
 import useContainerDimensions from "@/hooks/useContainerDimensions";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Header() {
   const containerRef = useRef<HTMLDivElement>(null);
   const { height } = useContainerDimensions(containerRef);
+
+  const [isHeaderVisible, setHeaderVisible] = useState(true);
+  const [lastScrollTop, setLastScrollTop] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollTop = window.scrollY;
+
+      if (currentScrollTop > lastScrollTop) {
+        setHeaderVisible(false);
+      } else {
+        setHeaderVisible(true);
+      }
+
+      setLastScrollTop(currentScrollTop);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollTop]);
   return (
     <>
       <HeaderContainer
         ref={containerRef}
+        visible={isHeaderVisible || lastScrollTop < 100}
         className="shadow-md text-sm md:text-base lg:py-6 md:py-4 py-3 md:px-12 px-4 xs:px-8 sm:px-12 lg:px-28 xl:px-40"
       >
         <Link href="/">

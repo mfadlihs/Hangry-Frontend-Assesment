@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "thumbnail": "/images/ayam_koplo.png",
+    "title": "Ayam Koplo",
+    "food": "Ayam Geprek",
+    "country": "Indonesia"
+  },
+  {
+    "id": 2,
+    "thumbnail": "/images/san_gyu.png",
+    "title": "San Gyu",
+    "food": "Beef Bowl",
+    "country": "Jepang"
+  },
+  {
+    "id": 3,
+    "thumbnail": "/images/bude_sari.png",
+    "title": "Bude Sari",
+    "food": "Nasi Ayam",
+    "country": "Indonesia"
+  },
+  {
+    "id": 4,
+    "thumbnail": "/images/kopi_daripada.png",
+    "title": "Kopi Dari|Pada",
+    "food": "Minuman",
+    "country": "Indonesia"
+  }
+]

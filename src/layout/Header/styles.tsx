@@ -1,9 +1,9 @@
 import styled from "@emotion/styled";
 
-export const HeaderContainer = styled.div`
+export const HeaderContainer = styled.div<{ visible: boolean }>`
   backdrop-filter: blur(60px);
   position: fixed;
-  top: 0px;
+  top: ${({ visible }) => (visible ? "0px" : "-150px")};
   left: 0px;
   right: 0px;
   display: flex;

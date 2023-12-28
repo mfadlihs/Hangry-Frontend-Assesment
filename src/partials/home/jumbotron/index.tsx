@@ -7,9 +7,9 @@ export default function HomeJumbotron() {
         <div className="caption1 text-xl mb-2 md:mb-3 lg:mb-4">
           Kamu lapar atau haus?
         </div>
-        <div className="caption2 mb-6 md:mb-8 lg:mb-10">
+        <h1 className="caption2 mb-6 md:mb-8 lg:mb-10">
           Tenang... ada Hangry! yang siap mengatasi
-        </div>
+        </h1>
         <div className="w-fit flex flex-wrap gap-6 gap-y-2">
           <img
             src="/icons/button_playstore.svg"
