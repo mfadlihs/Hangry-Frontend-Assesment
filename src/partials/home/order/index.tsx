@@ -5,7 +5,7 @@ import Button from "@/components/Button";
 
 export default function HomeOrder() {
   return (
-    <OrderContainer className="md:flex-row gap-y-4 md:items-center flex-col-reverse gap-x-2">
+    <OrderContainer className="md:flex-row gap-y-4 md:items-center flex-col-reverse gap-x-12">
       <div className="basis-[50%]">
         <h2>Makin rame, makin hemat!</h2>
         <div data-aos="fade" className="caption">
