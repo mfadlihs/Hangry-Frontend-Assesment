@@ -9,7 +9,10 @@ interface CardBrandProps {
 
 export default function CardBrand({ data }: CardBrandProps) {
   return (
-    <CardBrandContainer className={`${data.id == 4 && "block md:hidden"}`}>
+    <CardBrandContainer
+      data-aos="zoom-in-up"
+      className={`${data.id == 4 && "block md:hidden"}`}
+    >
       <div className="relative">
         <Image
           quality={80}

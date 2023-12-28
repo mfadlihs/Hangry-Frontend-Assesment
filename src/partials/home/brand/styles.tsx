@@ -6,12 +6,12 @@ export const BrandContainer = styled.div`
   ${css(
     mediaQuery({
       padding: [
-        "40px 16px 56px",
-        "44px 20px 60px",
-        "44px 40px 60px",
-        "48px 80px 80px",
-        "56px 120px 120px",
-        "56px 165px 120px",
+        "40px 0 56px",
+        "44px 0 60px",
+        "44px 0 60px",
+        "48px 0 80px",
+        "56px 0 120px",
+        "initial 0 120px",
       ],
     })
   )}
